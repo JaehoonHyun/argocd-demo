@@ -1,5 +1,5 @@
 clusters:
-- name: minikube
+- name: argocd-cluster
   destinationServer: https://kubernetes.default.svc
   apps:
     prometheus:
@@ -10,7 +10,7 @@ clusters:
       enabled: true
       branch: HEAD
 
-- name: scaleout
+- name: scaleout-cluster
   destinationServer: https://3BB503852C7115148AAA16087C6736C5.gr7.ap-northeast-1.eks.amazonaws.com
   apps:
     prometheus:
